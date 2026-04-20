@@ -59,7 +59,7 @@ talon-tales-setup-lutris/
 
 | Type | Method | Why |
 |------|--------|-----|
-| Config files (`.conf`, `.ini`, `grf.list`, etc.) | **Symlinked** | Edit in game dir = auto-tracked by git |
+| Config files (`.conf`, `.ini`) | **Symlinked** | Edit in game dir = auto-tracked by git |
 | `savedata/*.lua` | **Symlinked** | Game saves sync to repo |
 | Lutris `*.yml` | **Symlinked** | Lutris UI edits sync to repo |
 | Binaries (`.exe`, `.dll`, `.asi`, `.m3d`) | **Copied** | Don't change, no need to symlink |
@@ -166,7 +166,7 @@ Both dgVoodoo2 AND DXVK are required:
 | `game/dinput.ini` | ROExt mouse freedom and key remapping |
 | `game/dinput8.ini` | ROExt window lock and input settings |
 | `game/plugin.ini` | RCX skill ground effect visuals |
-| `game/grf.list` | GRF file load order |
+| `game/Setup.ini` | OpenSetup engine config |
 
 ## Troubleshooting
 
@@ -179,7 +179,8 @@ Both dgVoodoo2 AND DXVK are required:
 
 ## Notes
 
-- `gepard.dll` and `gepard.grf` are **not** tracked (obtained via GamePatch.exe)
+- `gepard.dll`, `gepard.grf`, and `gepard.license` are **not** tracked (obtained via installer/patcher)
+- `grf.list` is **not** tracked (provided by installer)
 - `gepard.register` is **not** tracked (machine-specific, regenerates on launch)
 - Shader cache (`GLCache/`) is **not** tracked (regenerates automatically)
 - Paths are hardcoded to this machine's setup

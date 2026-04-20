@@ -175,7 +175,7 @@ info "AI scripts copied."
 # 6c: Symlink config files (edits sync to repo)
 info "Symlinking config files (edits in game dir = edits in repo)..."
 for file in dgVoodoo.conf dxvk.conf dinput.ini dinput8.ini plugin.ini \
-            Setup.ini GamePatch.ini grf.list no_splash gepard.license; do
+            Setup.ini GamePatch.ini; do
     src="$SCRIPT_DIR/game/$file"
     dst="$GAME_DIR/$file"
     [ -f "$src" ] && symlink "$src" "$dst"

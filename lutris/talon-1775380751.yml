@@ -1,0 +1,18 @@
+game:
+  arch: auto
+  desktop_integration: true
+  exe: /mnt/holy-grail/do-NOT-delete/Games/TalonTales/GamePatch.exe
+  prefix: /home/tsunderick/.local/share/lutris/runners/wine/talontales
+  working_dir: /mnt/holy-grail/do-NOT-delete/Games/TalonTales
+system:
+  disable_screen_saver: true
+  env: {}
+  gamescope: false
+  mangohud: false
+wine:
+  Desktop: true
+  Dpi: true
+  ExplicitDpi: '150'
+  WineDesktop: 640x480
+  system_winetricks: false
+  version: wine-staging-10.18

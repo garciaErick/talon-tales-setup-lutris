@@ -1,0 +1,54 @@
+# =============================================
+# TalonTales Setup - Git Ignore
+# =============================================
+
+# --- Game assets (obtain from installer/patcher) ---
+*.grf
+BGM/
+skin/
+System/
+
+# --- Gepard anti-cheat binaries (obtain from patcher) ---
+gepard.dll
+gepard.grf
+
+# --- Machine-specific / regenerates on launch ---
+gepard.register
+patchprogress.inf
+
+# --- Caches (regenerate automatically) ---
+GLCache/
+_tmpEmblem/
+
+# --- User-generated content ---
+ScreenShot/
+Replay/
+
+# --- Empty / unused directories ---
+data/
+memo/
+Navigationdata/
+
+# --- Logs ---
+*.log
+game_crash_log.txt
+
+# --- Trash ---
+trash/
+
+# --- Windows uninstaller ---
+unins000.dat
+unins000.exe
+
+# --- Windows shortcuts ---
+*.lnk
+
+# --- Compressed backups ---
+*.7z
+
+# --- Editor / OS junk ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

@@ -1,0 +1,23 @@
+name: TalonTales
+game_slug: talontales
+version: Custom Setup
+slug: talontales-custom
+runner: wine
+year: 2002
+user: tsunderick
+
+script:
+  game:
+    exe: /mnt/holy-grail/do-NOT-delete/Games/TalonTales/GamePatch.exe
+    prefix: $HOME/.local/share/lutris/runners/wine/talontales
+    working_dir: /mnt/holy-grail/do-NOT-delete/Games/TalonTales
+  
+  wine:
+    dxvk: true
+    esync: true
+    version: system
+    
+  system:
+    env:
+      __GL_SHADER_DISK_CACHE: "1"
+      __GL_SHADER_DISK_CACHE_PATH: /mnt/holy-grail/do-NOT-delete/Games/TalonTales

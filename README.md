@@ -45,8 +45,7 @@ talon-tales-setup-lutris/
 │   ├── system.reg           # System-wide Wine registry
 │   ├── userdef.reg          # User defaults
 │   ├── winetricks.log       # Installed winetricks (vcrun6, vcrun2008)
-│   ├── lutris.json          # DPI setting (110)
-│   └── dosdevices.conf      # Documents drive letter mappings
+│   └── lutris.json          # DPI setting (110)
 │
 ├── lutris/                  # Lutris game configs (SYMLINKED — Lutris edits sync to repo)
 │   ├── talontales.yml
